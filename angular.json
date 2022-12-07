@@ -4,6 +4,9 @@
   "newProjectRoot": "projects",
   "projects": {
     "nahu-dev-personal-site": {
+      "i18n": {
+        "sourceLocale":"es-AR"
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {

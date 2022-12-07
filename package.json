@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --localize",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "i18n": "ng extract-i18n --output-path src/locale",
     "build-image": "docker build -t personal-site:latest ./",
     "start-docker": "docker run -d -p 4200:80 --name dev-site personal-site:latest"
   },
