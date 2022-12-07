@@ -20,7 +20,7 @@ export class ThemeModeSelectorComponent implements OnInit {
   }
 
   private setTheme(theme: 'light' | 'dark' | null = null): void {
-    theme = theme ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    theme = theme ?? localStorage.getItem('theme') as any ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
 
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
@@ -29,5 +29,7 @@ export class ThemeModeSelectorComponent implements OnInit {
       document.documentElement.classList.remove('dark');
       this.currentTheme = 'light';
     }
+
+    localStorage.setItem("theme", (theme as any))
   }
 }
