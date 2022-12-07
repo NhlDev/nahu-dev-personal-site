@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { ThemeModeSelectorComponent } from './components/theme-mode-selector/theme-mode-selector.component';
+import { HeaderComponent, ThemeModeSelectorComponent, FooterComponent } from './components';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ThemeModeSelectorComponent
+    ThemeModeSelectorComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

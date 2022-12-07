@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { HeaderComponent, ThemeModeSelectorComponent } from './components';
+import { HeaderComponent, ThemeModeSelectorComponent, FooterComponent } from './components';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -13,6 +13,7 @@ describe('AppComponent', () => {
         AppComponent,
         HeaderComponent,
         ThemeModeSelectorComponent,
+        FooterComponent
       ],
     }).compileComponents();
   });
