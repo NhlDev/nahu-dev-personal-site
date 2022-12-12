@@ -24,11 +24,12 @@ export class ThemeModeSelectorComponent implements OnInit {
   }
 
   private setTheme(theme: 'light' | 'dark' | null = null): void {
+    
     theme = theme ?? this.storage.getItem('theme') as any ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
 
     if (theme === 'dark') {
       //this.renderder.addClass('body', 'dark')
-      document.documentElement.classList.add();
+      document.documentElement.classList.add('dark');
       this.currentTheme = 'dark'
     } else {
       //this.renderder.removeClass('body', 'dark')

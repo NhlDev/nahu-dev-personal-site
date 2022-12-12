@@ -1,29 +1,38 @@
 .bg-pc {
-    background-image: url('/assets/images/pc-main.jpg');
-    background-position-y: top;
     width: 100%;
-    min-height: 640px;
-    opacity: .9;
+    min-height: calc(45vh + 50px);
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 
-    .text-shadow-white {
-        text-shadow: 1px 1px 3px white;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        min-height: calc(45vh + 50px);
+        opacity: .5;
+        z-index: -1;
+        background-image: url('/assets/images/pc-main.jpg');
+        background-position-y: top;
+        background-size: cover;
     }
 
-    .name{
+    .name {
         animation: fadeIn 1.5s;
-        
+
     }
 }
 
 // Animacion fadeIn
 
 @keyframes fadeIn {
-    0% { 
-        opacity: 0; 
+    0% {
+        opacity: 0;
         transform: translate3d(0, - 50px, 0)
     }
-    100% { 
-        opacity: 1; 
+
+    100% {
+        opacity: 1;
         transform: translate3d(0, 0, 0)
     }
-  }
+}
