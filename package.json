@@ -7,6 +7,7 @@
     "build": "ng build --prod --localize",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "ci:test": "ng test --watch=false --browsers=ChromeHeadless",
     "i18n": "ng extract-i18n --output-path src/locale",
     "build-image": "docker build -t personal-site:latest ./",
     "start-docker": "docker run -d -p 4200:80 --name dev-site personal-site:latest"
@@ -29,6 +30,7 @@
     "@angular-devkit/build-angular": "^15.0.1",
     "@angular/cli": "~15.0.1",
     "@angular/compiler-cli": "^15.0.0",
+    "@angular/localize": "^15.0.3",
     "@types/jasmine": "~4.3.0",
     "autoprefixer": "^10.4.13",
     "jasmine-core": "~4.5.0",
