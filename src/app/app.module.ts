@@ -10,7 +10,7 @@ import { HeaderComponent, ThemeModeSelectorComponent, FooterComponent } from './
     AppComponent,
     HeaderComponent,
     ThemeModeSelectorComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

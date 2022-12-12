@@ -1,0 +1,80 @@
+[
+    {
+        "image": "assets/t-icons/angular.svg",
+        "title": "Angular",
+        "description": "Aplicaciones web reactivas de tipo SPA con Angular Version 14+",
+        "isHot": true
+    },
+    {
+        "image": "assets/t-icons/html-1.svg",
+        "title": "HTML5",
+        "description": "",
+        "isHot": true
+    },
+    {
+        "image": "assets/t-icons/css-3.svg",
+        "title": "CSS3",
+        "description": "",
+        "isHot": true
+    },
+    {
+        "image": "assets/t-icons/javascript-1.svg",
+        "title": "Javascript",
+        "description": "",
+        "isHot": true
+    },
+    {
+        "image": "assets/t-icons/typescript.svg",
+        "title": "TypeScript",
+        "description": "",
+        "isHot": true
+    },
+    {
+        "image": "assets/t-icons/ionic.svg",
+        "title": "Ionic Framework",
+        "description": "Desarrollo de aplicaciones Híbridas con Ionic 6 y capacitorJs",
+        "isHot": true
+    },
+    {
+        "image": "assets/t-icons/bootstrap-4.svg",
+        "title": "Bootstrap",
+        "description": "Libreria de estilos y componentes desarrollada por Twitter",
+        "isHot": true
+    },
+    {
+        "image": "assets/t-icons/tailwind-css-2.svg",
+        "title": "Tailwind CSS",
+        "description": "",
+        "isHot": false
+    },
+    {
+        "image": "assets/t-icons/android-4.svg",
+        "title": "Android",
+        "description": "Desarrollo de aplicaciones android nativas con Android Studio",
+        "isHot": false
+    },
+    {
+        "image": "assets/t-icons/apple.svg",
+        "title": "IOS",
+        "description": "Aplicaciones IOS con Swift UI.",
+        "isHot": false
+    },
+    {
+        "image": "assets/t-icons/git-icon.svg",
+        "title": "Versionado GIT",
+        "description": "",
+        "isHot": false
+    },
+    {
+        "image": "assets/t-icons/microsoft-sql-server-1.svg",
+        "title": "Microsoft SQL Server",
+        "description": "",
+        "isHot": false
+    },
+    {
+        "image": "assets/t-icons/netframework-1.svg",
+        "title": "Microsoft .NET Framework",
+        "description": "",
+        "isHot": false
+    }
+]
