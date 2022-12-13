@@ -1,6 +1,6 @@
-<div class="bg-pc bg-cover bg-no-repeat bg-center">
-
-    <div class="container mx-auto md:pt-10 text-shadow-white">
+<div class="bg-pc parallax-effect-container">
+    <div class="parallax-effect-bg"></div>
+    <div class="container mx-auto md:pt-10 text-shadow-white parallax-effect-content">
         <img class="mx-auto name transition-colors duration-200" src="assets/images/name-logo.svg" alt="Nahuel">
         <h2 class="text-center text-2xl md:text-4xl transition-colors duration-200 text-sky-600 dark:text-sky-300" i18n>
             Desarrollador Front-End
@@ -12,31 +12,35 @@
     </div>
 </div>
 
-<app-separator>Bio</app-separator>
+<app-separator i18n>Bio</app-separator>
 
-<div class="p-5 mt-5 mb-5">
-    <div class="text-center">
-        <img class="mi-foto mx-auto rounded-full hover:animate-pulse" src="assets/images/mifoto.jpg" alt="my foto">
+<div class="p-5 mt-5 mb-5 flex flex-row flex-wrap">
+    <div class="basis-full md:basis-1/3">
+        <img class="mi-foto mx-auto rounded-full w-10 h-10 hover:animate-pulse" src="assets/images/mifoto.jpg"
+            alt="my foto">
     </div>
     <br>
-    <div class="container text-center mx-auto">
-        <p i18n>
-            Me presento: Soy Nahuel Alderete. Desarrollador de software, principalmente Front-end con Angular. Aunque,
-            en
-            mis inicios, comence programando con Microsoft .NET Framework en el lenguaje C#.
-            Te invito a ver mi <a class="underline text-sky-300" href="#">CV Interactivo</a>.
+    <div class="basis-full md:basis-2/3 flex flex-col align-middle text-center md:text-left justify-center">
+        <p i18n> Hola, mi nombre es Nahuel Alderete. Soy un programador con
+            {{ yearsOfExperience }} años de experiencia.
         </p>
-        <br>
+        <p i18n>Comencé mi carrera como full-stack, pero actualmente estoy volcado completamente al front-end y a
+            mobile.</p>
         <p i18n>
-            O si prefieres una version corta, estas son mis habilidades:
+            Mi principal habilidad se centra en Angular y aplicaciones móviles multiplataformas con Ionic (Ios y
+            Android).
+        </p>
+        <p i18n>
+            Tienes un proyecto y quieres hacerlo realidad? Hagámoslo realidad!
         </p>
     </div>
 </div>
 
-<app-separator>Skills</app-separator>
-
+<app-separator i18n>Skills principales</app-separator>
+<br>
 <app-skills></app-skills>
-
+<br>
 <app-separator></app-separator>
+
 
 <br>

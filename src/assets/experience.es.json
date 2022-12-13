@@ -66,49 +66,5 @@
         "urls": [
             "https://www.huenei.com"
         ]
-    },
-    {
-        "title": "Desarrollador .NET",
-        "descriptions": [
-            "Mantenimiento de Intranet institucional, aplicación basada en ASP.NET WebForms.",
-            "Desarrollo de triggers para logueo de cambios en base de datos de acceso a aplicaciones.",
-            "Desarrollo en Java de logueo de consultas a web service de digitalización de documentos bancarios.",
-            "Mantenimiento de las webs institucionales Desktop y Mobile, basada en tecnologías ASP.NET WebForms y ASP.NET MVC4 respectivamente.",
-            "Desarrollo completo de página de solicitud de tarjetas. Basada en ASP.NET WebForms con jQuery y Twitter Bootstrap 3 usando pollyfills javascript y estilos condicionales para la retro compatibilidad con navegadores antiguos."
-        ],
-        "company": "Banco Hipotecario S.A.",
-        "image": "assets/companies/hipotecario.png",
-        "range": "Junio 2015 - julio 2016",
-        "urls": [
-            "https://www.hipotecario.com.ar"
-        ]
-    },
-    {
-        "title": "Administrador de base de datos",
-        "descriptions": [
-            "Ejecución y revisión de scripts en todos los ambientes.",
-            "Alta y baja de permisos y accesos de usuarios SQL y usuarios Windows.",
-            "Diagnóstico de errores en ejecuciones de DTS y Jobs.",
-            "Backups y restore de bases de datos."
-        ],
-        "company": "Prisma Medio de Pagos",
-        "image": "assets/companies/prisma.jpg",
-        "range": "Febrero 2015 - junio 2015",
-        "urls": [
-            "https://www.prismamediosdepago.com"
-        ]
-    },
-    {
-        "title": "Desarrollador .NET",
-        "descriptions": [
-            "Desarrollo y mantenimiento de sistema de monitoreo y gestión de inventarios, convenios y balances en tiempo real para empresa en el rubro de fármacos oncológicos. Aplicación basada en ASP.NET MVC5, junto con Framework KENDO UI de Telerik, Bootstrap 3.",
-            "Desarrollo de sistema interno de gestión de ITRIO. Aplicación basada en ASP.NET WebForms y Entity Framework 6 como ORM."
-        ],
-        "company": "Itrio S.A.",
-        "image": "assets/companies/itrio.jpg",
-        "range": "Enero 2014 - febrero 2015",
-        "urls": [
-            "http://www.itrio.net"
-        ]
     }
 ]

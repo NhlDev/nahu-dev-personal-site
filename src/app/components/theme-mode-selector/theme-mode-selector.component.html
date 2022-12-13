@@ -1,5 +1,5 @@
 <button class="w-14 h-5 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow"
-    (click)="toggleTheme()">
+    (click)="toggleTheme()" [title]="currentTheme">
     <div [ngClass]="{'-translate-x-2 bg-yellow-300': currentTheme == 'light', 'translate-x-full bg-gray-400': currentTheme == 'dark'}"
         class="w-8 h-8 relative rounded-full transition duration-500 transform p-1 text-white">
 

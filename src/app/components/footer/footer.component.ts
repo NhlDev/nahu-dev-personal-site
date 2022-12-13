@@ -8,6 +8,8 @@ import { ChangeDetectionStrategy, Component, HostBinding, ViewEncapsulation } fr
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
-  @HostBinding() class = 'web-footer'
+  @HostBinding() class = 'web-footer';
+
+  public year = (new Date()).getFullYear();
 
 }
