@@ -14,9 +14,9 @@ import { HeaderComponent, ThemeModeSelectorComponent, FooterComponent } from './
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

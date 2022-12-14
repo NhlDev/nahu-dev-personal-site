@@ -39,3 +39,12 @@
         transform: translate3d(0, -50%, 0);
     }    
 }
+
+:root{
+    --google-captcha-visibility: hidden;
+}
+
+// hide recaptcha badge
+.grecaptcha-badge {
+    visibility: var(--google-captcha-visibility);
+  }
