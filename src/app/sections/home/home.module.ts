@@ -3,17 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { HomeComponent } from './pages/home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
-import { SeparatorComponent, SkillsComponent } from '../../components';
+import {  SkillsComponent } from '../../components';
+import { SeparatorModule } from '../../components/separator/separator.module';
 
 @NgModule({
     declarations: [
         HomeComponent,
-        SeparatorComponent,
         SkillsComponent
     ],
     imports: [
         CommonModule,
-        HomeRoutingModule
+        HomeRoutingModule,
+        SeparatorModule
     ]
 })
 export class HomeModule { }

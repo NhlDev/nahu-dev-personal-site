@@ -9,8 +9,6 @@ import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation, Renderer
 })
 export class ThemeModeSelectorComponent implements OnInit {
 
-  //constructor(private renderder: Renderer2) { }
-
   public currentTheme: 'light' | 'dark' = 'light';
 
   private storage: Storage = sessionStorage; // localStorage;

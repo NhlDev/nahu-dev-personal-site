@@ -6,6 +6,7 @@ import { RecaptchaV3Module, RECAPTCHA_V3_SITE_KEY } from 'ng-recaptcha';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { ContactMeRoutingModule } from './contact-me-routing.module';
 import { reCaptchaConfig } from '../../constants/re-captcha-config.const';
+import { SeparatorModule } from '../../components/separator/separator.module';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { reCaptchaConfig } from '../../constants/re-captcha-config.const';
         FormsModule,
         ReactiveFormsModule,
         RecaptchaV3Module,
+        SeparatorModule
     ],
     providers: [{
         provide: RECAPTCHA_V3_SITE_KEY,

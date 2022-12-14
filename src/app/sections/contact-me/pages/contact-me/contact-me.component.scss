@@ -1,5 +1,10 @@
-:root{
-    --google-captcha-visibility: visible;
+.parallax-effect-bg {
+    background-image: url('/assets/images/illuminated-laptop.jpg');
+    background-position-y: bottom;
+}
+
+.has-error {
+    border: 1px solid red;
 }
 
 .envolope-base {

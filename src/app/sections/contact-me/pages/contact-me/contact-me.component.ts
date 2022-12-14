@@ -14,20 +14,26 @@ export class ContactMeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   constructor(private formBuilder: FormBuilder, private captchaV3Service: ReCaptchaV3Service) { }
 
-  public contactForm!: FormGroup
+  public contactForm!: FormGroup;
+  public sending: boolean = false;
 
   public ngOnInit(): void {
     this.contactForm = this.formBuilder.group({
       name: ['', [Validators.required, Validators.maxLength(80)]],
       eMail: ['', [Validators.required, Validators.email, , Validators.maxLength(100)]],
-      message: ['', [Validators.required, , Validators.maxLength(200)]],
+      messageBody: [null, [Validators.required, , Validators.maxLength(200)]],
     });
   }
 
   public submit(): void {
-    this.captchaV3Service.execute("SendMail").subscribe((response) => {
-      console.log(response)
-    })
+    // this.captchaV3Service.execute("SendMail").subscribe((response) => {
+    //   console.log(response)
+    // })
+
+    this.sending = true;
+    setTimeout(() => {
+      this.sending = false;
+    }, 3000);
 
   }
 

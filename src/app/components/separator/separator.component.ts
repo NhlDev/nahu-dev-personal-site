@@ -7,5 +7,4 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SeparatorComponent {
-}
+export class SeparatorComponent { }
