@@ -1,4 +1,7 @@
-import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+
+import { PlatformChekService } from '../../services/platform-check.service';
 
 const SKILLS_URL = 'assets/skills.es.json';
 
@@ -10,11 +13,15 @@ const SKILLS_URL = 'assets/skills.es.json';
 })
 export class SkillsComponent implements OnInit {
 
-  public skills?: { image: string, title: string, description: string, isHot: boolean }[];
+  constructor(private platformCheckerSrv: PlatformChekService, private http: HttpClient) { }
+
+  public skills?: skill[];
 
   public ngOnInit(): void {
-    fetch(SKILLS_URL)
-      .then(res => res.json())
-      .then((data) => this.skills = data);
+    if (this.platformCheckerSrv.isBrowser) {
+      this.http.get<skill[]>(SKILLS_URL).subscribe((data) => this.skills = data);
+    }
   }
 }
+
+interface skill { image: string, title: string, description: string, isHot: boolean }

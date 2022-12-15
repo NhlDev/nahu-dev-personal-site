@@ -33,7 +33,11 @@
     border-top: solid 45px #3292e0;
     border-right: solid 70px transparent;
     border-left: solid 70px transparent;
-    animation: el-open 10s infinite;
+    animation: el-open 2s infinite;
+}
+
+.alert {
+    animation-name: alert-fading;
 }
 
 

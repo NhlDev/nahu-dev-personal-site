@@ -10,7 +10,11 @@
     "ci:test": "ng test --watch=false --browsers=ChromeHeadless",
     "i18n": "ng extract-i18n --output-path src/locale",
     "build-image": "docker build -t personal-site:latest ./",
-    "start-docker": "docker run -d -p 4200:80 --name dev-site personal-site:latest"
+    "start-docker": "docker run -d -p 4200:80 --name dev-site personal-site:latest",
+    "dev:ssr": "ng run nahu-dev-personal-site:serve-ssr",
+    "serve:ssr": "node dist/nahu-dev-personal-site/server/main.js",
+    "build:ssr": "ng build && ng run nahu-dev-personal-site:server",
+    "prerender": "ng run nahu-dev-personal-site:prerender"
   },
   "private": true,
   "dependencies": {
@@ -21,9 +25,14 @@
     "@angular/forms": "^15.0.0",
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
+    "@angular/platform-server": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "@nguniversal/express-engine": "^15.0.0",
+    "express": "^4.15.2",
     "ng-recaptcha": "^11.0.0",
+    "nodemailer": "^6.8.0",
     "rxjs": "~7.5.0",
+    "ssr-window": "^4.0.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },
@@ -32,7 +41,10 @@
     "@angular/cli": "~15.0.1",
     "@angular/compiler-cli": "^15.0.0",
     "@angular/localize": "^15.0.3",
+    "@nguniversal/builders": "^15.0.0",
+    "@types/express": "^4.17.0",
     "@types/jasmine": "~4.3.0",
+    "@types/node": "^14.15.0",
     "autoprefixer": "^10.4.13",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",

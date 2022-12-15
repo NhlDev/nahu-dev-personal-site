@@ -1,4 +1,8 @@
-import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation, Renderer2 } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import { getWindow, getDocument } from 'ssr-window';
+
+import { PlatformChekService } from '../../services/platform-check.service';
+import { StorageService } from '../../services/ssr-storage-fixer.service';
 
 @Component({
   selector: 'app-theme-mode-selector',
@@ -9,29 +13,36 @@ import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation, Renderer
 })
 export class ThemeModeSelectorComponent implements OnInit {
 
+  constructor(storage: StorageService, private platformChekSrv: PlatformChekService) {
+    this.storage = storage;
+  }
+
   public currentTheme: 'light' | 'dark' = 'light';
 
-  private storage: Storage = sessionStorage; // localStorage;
+  // Fake on server side
+  private storage!: Storage;
+  private window = getWindow();
+  private document = getDocument();
 
   public ngOnInit(): void {
     this.setTheme();
   }
 
   public toggleTheme() {
-    this.setTheme(this.currentTheme == 'light' ? 'dark' : 'light');
+    if (this.platformChekSrv.isBrowser) {
+      this.setTheme(this.currentTheme == 'light' ? 'dark' : 'light');
+    }
   }
 
   private setTheme(theme: 'light' | 'dark' | null = null): void {
-    
-    theme = theme ?? this.storage.getItem('theme') as any ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
 
-    if (theme === 'dark') {
-      //this.renderder.addClass('body', 'dark')
-      document.documentElement.classList.add('dark');
+    theme = theme ?? this.storage.getItem('theme') as any ?? (this.window?.matchMedia('(prefers-color-scheme: dark)')?.matches ? 'dark' : 'light')
+
+    if (theme === 'dark' && document?.documentElement) {
+      this.document.documentElement?.classList.add('dark');
       this.currentTheme = 'dark'
     } else {
-      //this.renderder.removeClass('body', 'dark')
-      document.documentElement.classList.remove('dark');
+      this.document.documentElement?.classList.remove('dark');
       this.currentTheme = 'light';
     }
 

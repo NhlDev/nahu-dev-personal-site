@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,8 +14,9 @@ import { HeaderComponent, ThemeModeSelectorComponent, FooterComponent } from './
     FooterComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
+    HttpClientModule,
   ],
 
   bootstrap: [AppComponent]

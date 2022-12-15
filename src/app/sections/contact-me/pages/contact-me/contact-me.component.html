@@ -40,9 +40,10 @@
         </div>
 
         <div class="pb-2 pt-4">
-            <input type="email" placeholder="E-mail" maxlength="100"
+            <input
                 [ngClass]="{'has-error placeholder:text-red-500': contactForm.get('email')?.invalid && contactForm.get('email')?.dirty}"
-                class="block w-full p-4 text-lg rounded-sm bg-slate-200 placeholder:text-gray-500 dark:bg-slate-800 dark:placeholder:text-gray-400 transition-colors duration-200">
+                type="email" placeholder="E-Mail" formControlName="email"
+                class="block w-full p-4 text-lg rounded-sm bg-slate-200 placeholder:text-gray-500 dark:bg-slate-800 dark:placeholder:text-gray-400 transition-all duration-200">
         </div>
 
         <div class="pb-2 pt-4">
@@ -55,8 +56,8 @@
         </div>
 
         <div class="px-4 pb-2 pt-4">
-            <button type="submit"
-                class="uppercase block w-full md:w-2/3 mx-auto p-4 text-lg rounded bg-slate-200 hover:bg-slate-300 text-gray-500 dark:bg-sky-800 dark:hover:bg-sky-700 dark:text-white focus:outline-none transition-colors duration-200"
+            <button type="submit" [disabled]="contactForm.invalid"
+                class="uppercase block w-full md:w-2/3 mx-auto p-4 text-lg rounded bg-slate-200 hover:bg-slate-300 text-gray-500 disabled:bg-gray-500 disabled:text-slate-200 disabled:dark:bg-white disabled:dark:text-sky-800 dark:bg-sky-800 dark:hover:bg-sky-700 dark:text-white focus:outline-none transition-colors duration-200 disabled:cursor-not-allowed"
                 i18n>
                 Enviar
             </button>
@@ -106,7 +107,12 @@
                 <div class="envolope-flap"></div>
             </div>
         </div>
-        <br>
-        <p class="text-center animate-pulse" i18n>Enviando</p>
+        <br><br>
+        <p class="text-center animate-pulse text-xl" *ngIf="!success && !error" i18n>Enviando</p>
+        <p class="text-center text-green-400 text-2xl" *ngIf="success" i18n>Mensaje Enviado!</p>
+        <p class="text-center text-red-500 text-2xl" *ngIf="error" i18n>
+            No se pudo enviar tu mensaje. Por favor, intenta nuevamente.
+        </p>
+
     </div>
 </div>
