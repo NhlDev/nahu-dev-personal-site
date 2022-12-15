@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nahu-dev-personal-site",
+            "outputPath": "dist/nahu-dev-personal-site/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -100,6 +100,60 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/nahu-dev-personal-site/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "inlineStyleLanguage": "scss"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "nahu-dev-personal-site:build:development",
+              "serverTarget": "nahu-dev-personal-site:server:development"
+            },
+            "production": {
+              "browserTarget": "nahu-dev-personal-site:build:production",
+              "serverTarget": "nahu-dev-personal-site:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "nahu-dev-personal-site:build:production",
+              "serverTarget": "nahu-dev-personal-site:server:production"
+            },
+            "development": {
+              "browserTarget": "nahu-dev-personal-site:build:development",
+              "serverTarget": "nahu-dev-personal-site:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
