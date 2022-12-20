@@ -3,7 +3,7 @@ import { AfterViewInit, Component, HostBinding, OnDestroy, OnInit, ViewEncapsula
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { delay, finalize, tap } from 'rxjs';
 import { MessageSenderService } from 'src/app/services/message-sender.service';
-import { getDocument } from 'ssr-window';
+import { getDocument, getWindow } from 'ssr-window';
 
 import { PlatformChekService } from '../../../../services/platform-check.service';
 
@@ -18,6 +18,8 @@ export class ContactMeComponent implements OnInit, AfterViewInit, OnDestroy {
   @HostBinding() class = 'contact-me';
 
   private document = getDocument();
+  private window = getWindow();
+  private timeoutId: number = 0;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -57,7 +59,7 @@ export class ContactMeComponent implements OnInit, AfterViewInit, OnDestroy {
   public ngAfterViewInit(): void {
     if (this.platformChekSrv.isBrowser) {
       //give some time to load
-      setTimeout(() => {
+      this.timeoutId = this.window.setTimeout(() => {
         const element = this.document.getElementsByClassName('grecaptcha-badge')[0] as HTMLElement;
         if (element) {
           element.style.visibility = 'visible';
@@ -68,6 +70,7 @@ export class ContactMeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public ngOnDestroy(): void {
     if (this.platformChekSrv.isBrowser) {
+      this.window.clearTimeout(this.timeoutId);
       const element = this.document.getElementsByClassName('grecaptcha-badge')[0] as HTMLElement;
       if (element) {
         element.style.visibility = 'hidden';

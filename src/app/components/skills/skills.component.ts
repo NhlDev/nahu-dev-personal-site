@@ -1,9 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Inject, LOCALE_ID, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { PlatformChekService } from '../../services/platform-check.service';
-
-const SKILLS_URL = 'assets/skills.es.json';
 
 @Component({
   selector: 'app-skills',
@@ -13,13 +11,13 @@ const SKILLS_URL = 'assets/skills.es.json';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor(private platformCheckerSrv: PlatformChekService, private http: HttpClient) { }
+  constructor(private platformCheckerSrv: PlatformChekService, private http: HttpClient, @Inject(LOCALE_ID) private locale: string) { }
 
   public skills?: skill[];
 
   public ngOnInit(): void {
     if (this.platformCheckerSrv.isBrowser) {
-      this.http.get<skill[]>(SKILLS_URL).subscribe((data) => this.skills = data);
+      this.http.get<skill[]>(`assets/skills.${this.locale}.json`).subscribe((data) => this.skills = data);
     }
   }
 }

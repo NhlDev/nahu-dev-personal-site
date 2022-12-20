@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="423411374589153577" datatype="html">
+        <source>Developed by Nahuel! © <x id="INTERPOLATION" equiv-text="{{ year }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8364309938383915497" datatype="html">
+        <source> Home </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="275864857476387223" datatype="html">
+        <source> Mi CV </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2728726850119335468" datatype="html">
+        <source> Contact me </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1500224385461393622" datatype="html">
+        <source>Mi CV</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5879236925760741065" datatype="html">
+        <source>Contact me </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7874909965114431966" datatype="html">
+        <source> Do you have a project? Do you want to chat an idea? Or you simply need guidance with your Front-end project. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="440998587371841333" datatype="html">
+        <source> Complete all the information on the form, and let's get in touch! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5137359570264196219" datatype="html">
+        <source> Complete the form, and I will reply to you as soon as possible. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4097117933882429207" datatype="html">
+        <source> Send </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1985802598179072128" datatype="html">
+        <source>You can see more in...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="204005137928664711" datatype="html">
+        <source><x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg class=&quot;w-6 float-left&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fab&quot; data-icon=&quot;linkedin-in&quot;
+            role=&quot;img&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 448 512&quot;&gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path fill=&quot;currentColor&quot;
+                d=&quot;M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z&quot;&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;/path&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/> LinkedIn </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">77,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1861891046626653474" datatype="html">
+        <source><x id="START_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; data-prefix=&quot;fab&quot; data-icon=&quot;github&quot; class=&quot;w-6 float-left&quot; role=&quot;img&quot;
+            xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 496 512&quot;&gt;"/><x id="START_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;path fill=&quot;currentColor&quot;
+                d=&quot;M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z&quot;&gt;"/><x id="CLOSE_TAG__SVG_PATH" ctype="x-_svg_path" equiv-text="&lt;/path&gt;"/><x id="CLOSE_TAG__SVG_SVG" ctype="x-_svg_svg" equiv-text="&lt;/svg&gt;"/> GitHub </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">89,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1356190156975025895" datatype="html">
+        <source>Sending</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7046888591179436759" datatype="html">
+        <source>Message sent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3954858510438191696" datatype="html">
+        <source> Your message could not be sent. Please try again. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">113,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4056689511578426351" datatype="html">
+        <source>Nahuel Alderete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/curriculum/pages/curriculum/curriculum.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5829685802775603804" datatype="html">
+        <source> University degree in programming - Universidad Tecnológica Nacional</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/curriculum/pages/curriculum/curriculum.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6879487574017086452" datatype="html">
+        <source>Buenos Aires, Argentina</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/curriculum/pages/curriculum/curriculum.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5023727272424201121" datatype="html">
+        <source>My experience 💻</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/curriculum/pages/curriculum/curriculum.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4826283266819597770" datatype="html">
+        <source> Front End Developer </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/home/pages/home/home.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6769219112239702582" datatype="html">
+        <source>Bio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/home/pages/home/home.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3722229430387904197" datatype="html">
+        <source> Hello, my name is Nahuel Alderete. I am a programmer with<x id="INTERPOLATION" equiv-text="{{ yearsOfExperience }}"/> years of experience. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/home/pages/home/home.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8060835702413525826" datatype="html">
+        <source>I started my career as a full-stack, but now I am completely focused on front-end and mobile.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/home/pages/home/home.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5611765654020001292" datatype="html">
+        <source> My main skill is Angular, and cross-platform mobile applications with Ionic (Ios and Android). </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/home/pages/home/home.component.html</context>
+          <context context-type="linenumber">29,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="989802790811898242" datatype="html">
+        <source> Do you have a project and want to make it come true? Let's make it happen </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/home/pages/home/home.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6563485025354047257" datatype="html">
+        <source>Main Skills</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/home/pages/home/home.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

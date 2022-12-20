@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Desarrollador Front-End",
+        "descriptions": [
+            "Diagnóstico de errores y soporte técnico para Prisma Campaigns. Importante plataforma de marketing para instituciones financieras.",
+            "Desarrollo de integraciones nativas para frameworks mobile hibridos (Ionic, React Native)."
+        ],
+        "company": "Infocorp",
+        "image": "assets/companies/infocorp.png",
+        "range": "Junio 2021 - Actualidad",
+        "urls": [
+            "https://infocorpgroup.com",
+            "https://prismacampaigns.com"
+        ],
+        "actual": true
+    },
+    {
+        "title": "Desarrollador Front-End",
+        "descriptions": [
+            "Desarrollo de aplicaciones webs y móviles como freelance. Principalmente aplicaciones móviles multiplataforma con Angular, Ionic y Capacitor js."
+        ],
+        "company": "Freelance",
+        "image": "assets/companies/freelance.png",
+        "range": "Mayo 2021 - Actualidad",
+        "urls": [],
+        "actual": true
+    },
+    {
+        "title": "Desarrollador Front-End Mobile",
+        "descriptions": [
+            "Desarrollo de aplicaciones móviles hibridas con Ionic 5 y Angular.",
+            "Desarrollo de librerías de funcionalidades y de componentes visuales para framework ionic."
+        ],
+        "company": "Flux IT",
+        "image": "assets/companies/fluxit-logo.png",
+        "range": "Septiembre 2020 - Junio 2021",
+        "urls": [
+            "https://www.fluxitsoft.com"
+        ]
+    },
+    {
+        "title": "Desarrollador .NET",
+        "descriptions": [
+            "Diagnóstico y resolución de bugs tanto en el código back-end Core, como en el código customizado de cada proyecto de la plataforma de Kapsch."
+        ],
+        "company": "Kapsch Trafficom Argentina",
+        "image": "assets/companies/kapsch.png",
+        "range": "Enero 2020 - junio 2020",
+        "urls": [
+            "https://www.kapsch.net/es"
+        ]
+    },
+    {
+        "title": "Desarrollador de Software",
+        "descriptions": [
+            "Desarrollador de aplicaciones móviles híbridas en Ionic 4.",
+            "Desarrollo de sitio web de e-commerce en Angular, con Web API. Integración con Todo Pago y ElasticSearch para optimización de búsquedas",
+            "Desarrollo de Aplicación mobile híbrida con Ionic 3 de sistema de gestión de turnos virtuales",
+            "Desarrollo de aplicaciones web de gestión de documentación interna para AA2000",
+            "Desarrollo de sitio web para el aeropuerto internacional de Armenia usando responsive design y enfoque mobile first.",
+            "Desarrollo de distintas Web API's para aplicaciones móviles internas de AA2000."
+        ],
+        "company": "Huenei IT",
+        "image": "assets/companies/Huenei.jpg",
+        "range": "Agosto 2016 - Enero 2020",
+        "urls": [
+            "https://www.huenei.com"
+        ]
+    }
+]

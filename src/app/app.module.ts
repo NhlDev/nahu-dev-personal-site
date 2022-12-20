@@ -18,7 +18,6 @@ import { HeaderComponent, ThemeModeSelectorComponent, FooterComponent } from './
     AppRoutingModule,
     HttpClientModule,
   ],
-
   bootstrap: [AppComponent]
 })
 export class AppModule { }
