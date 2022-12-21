@@ -21,6 +21,8 @@ function run() {
     const server = express();
     server.use("/es", appEs);
     server.use("/en", appEn);
+
+    server.use("", appEs);
     
     server.listen(port, () => { console.log(`Node Express server listening on http://localhost:${port} (from proxy)`); });
 }

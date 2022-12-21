@@ -23,6 +23,9 @@ export function app(lang: string = ''): express.Express {
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
+  //Json parser
+  server.use(express.json());
+
   // Serve static files from /browser
   server.get('*.*', express.static(distFolder, {
     maxAge: '1y'
@@ -34,7 +37,7 @@ export function app(lang: string = ''): express.Express {
   });
 
     // Express Rest API endpoints  
-    server.get('/api/**', PostHandler);
+    server.post('/api/**', PostHandler);
 
   return server;
 }
