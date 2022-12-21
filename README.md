@@ -1,15 +1,15 @@
-## Nahuel's personal website!
+## Sitio personal de Nahuel!
 
-This is the code for my personal website. It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+Este es el código de mi sitio personal. Fue generado con Angular [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
-It uses angular universal for SSR (Server Side Rendering), and reuses the express server as a simple API.
+Esta app usa Renderizado Lado servidor (SSR por sus siglas en ingles), y reutiliza el servidor express para una simple API.
 
-## Website link coming soon...
+## Link al sitio muy pronto...
 
-#### Warning: 
-The file with secret API keys are not included in this repo. if you want to run this app you must create a file named  **`secrets-keys.const.ts`** in the app's root path.
+#### Atención:
+El archivo con las claves secretas de APIs no está incluido en el repo. Si quieres correr la aplicación, deberás crear un archivo llamado **`secrets-keys.const.ts`** en la raíz de la aplicación.
 
-The object of the file must be defined like this:
+El objeto dentro del archivo debe ser definido de la siguiente manera:
 
 ```
 export const  PRIVATE_KEYS = {
@@ -20,43 +20,43 @@ export const  PRIVATE_KEYS = {
 }
 ```
 
-Installation:
+Instalacion:
 
 `npm install`  
 
-To Start Server:
+Para iniciar la aplicación:
 
 `npm start`  
 
-To Start Server with SSR:
+Para iniciar la aplicación con SSR:
 
 `npm run dev:ssr`
 
-To build the app with SSR enabled:
+Para compilar la aplicación con SSR:
 
 `npm run build:ssr`  
 
-To serve the app with SSR enabled:
+Para iniciar la aplicación con SSR:
 
 `npm run serve:ssr`  
 
-To create a docker image of the app with SSR enabled:
+Para crear una imagen docker de la aplicacion con SSR:
 
 `npm run build-image:ssr`  
 
-To start a docker container of the app with SSR enabled:
+Para inciar un contenedor docker de la aplicacion:
 
 `npm run start-docker:ssr`  
 
-To Visit App:
+Para visitar la app (localmente):
 
 `localhost:4200`  
 
-## Personal project goals:
+## Objetivos personales del proyecto:
 
-  - The main goal is to develop my own website to promote my job. Visit my [LinkedIn!](https://www.linkedin.com/in/nahuel-alderete/)
-  - Learn [TailWind CSS](https://tailwindcss.com/docs/guides/angular).
-  - Learn Server Side Rendering concepts applied to Angular. For this goal, I am using [Angular Universal](https://angular.io/guide/universal).
-  - Improve my knowloge about [Docker](https://www.docker.com/). This app is intended to run in a docker container.
+  - El objetivo principal es desarrollar mi sitio web personal para promover mi trabajo. Visita mi [LinkedIn!](https://www.linkedin.com/in/nahuel-alderete/)
+  - Aprender [TailWind CSS](https://tailwindcss.com/docs/guides/angular).
+  - Aprender los conceptos de Renderizado Lado Servidor aplicado a Angular. Para este objetivo, estoy usando [Angular Universal](https://angular.io/guide/universal).
+  - Mejorar mis conocimientos sobre [Docker](https://www.docker.com/). Esta aplicación esta pensada para correr en un contenedor docker.
 
-## Thanks for reading!
+## Gracias por leer!
