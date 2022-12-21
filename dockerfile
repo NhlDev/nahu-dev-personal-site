@@ -23,7 +23,7 @@ RUN npm run build
 FROM nginx:stable-alpine
 
 # Paso 2: Copio la app transpilada al directorio de nginx
-COPY --from=build /usr/local/app/dist/nahu-dev-personal-site /usr/share/nginx/html
+COPY --from=build /usr/local/app/dist /usr/share/nginx/html
 
 # Paso 3: Exponer puerto 80 de NGINX
 EXPOSE 80
