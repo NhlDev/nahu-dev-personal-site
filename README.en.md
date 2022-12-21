@@ -52,7 +52,7 @@ To Visit App:
 
 `localhost:4200`  
 
-## Personal project goals:
+## Personal goals of the project:
 
   - The main goal is to develop my own website to promote my job. Visit my [LinkedIn!](https://www.linkedin.com/in/nahuel-alderete/)
   - Learn [TailWind CSS](https://tailwindcss.com/docs/guides/angular).
