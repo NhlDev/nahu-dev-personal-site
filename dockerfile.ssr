@@ -6,10 +6,10 @@ FROM node:lts-alpine
 
 COPY ./dist ./dist
 COPY ./node_modules ./node_modules
-COPY ./angular.json .
-COPY ./package.json .
-COPY ./package-lock.json .
+# COPY ./angular.json .
+# COPY ./package.json .
+# COPY ./package-lock.json .
 
-CMD [ "node", "dist/nahu-dev-personal-site/server/proxy-server.js"]
+CMD [ "node", "dist/server/proxy-server.js"]
 
 EXPOSE 4200

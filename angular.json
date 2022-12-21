@@ -62,6 +62,8 @@
               ],
               "outputHashing": "all",
               "i18nMissingTranslation": "error",
+              "sourceMap": false,
+              "optimization": true,
               "localize": true
             },
             "development": {
@@ -126,8 +128,8 @@
               "outputHashing": "media",
               "localize": true,
 
-              "optimization": false,
-              "sourceMap": true
+              "optimization": true,
+              "sourceMap": false
 
             },
             "development": {

@@ -2,19 +2,19 @@
     {
         "image": "assets/t-icons/angular.svg",
         "title": "Angular",
-        "description": "Aplicaciones web reactivas de tipo SPA con Angular Version 14+",
+        "description": "Single Web Applications using Angular v14+",
         "isHot": true
     },
     {
         "image": "assets/t-icons/ionic.svg",
         "title": "Ionic Framework",
-        "description": "Desarrollo de aplicaciones Híbridas con Ionic 6 y capacitorJs",
+        "description": "Multi-plaform apps development with Ionic 6 and capacitorJs",
         "isHot": true
     },
     {
         "image": "assets/t-icons/netframework-1.svg",
         "title": "Microsoft .NET Framework",
-        "description": "Aplicaciones ASP.Net, MVC, Web API's, e incluso Xamarin.",
+        "description": " ASP.Net applications, MVC, Web API's, and even Xamarin.",
         "isHot": false
     }
 ]

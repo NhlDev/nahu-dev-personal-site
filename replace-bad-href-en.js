@@ -9,6 +9,8 @@ var path = require('path');
 
 const indexHtml = path.join(process.cwd(), 'dist/browser/en', 'index.html');
 
+console.info('Replacing  <base href="/en"> to <base href="/en/">');
+
 // Read file into a string
 fs.readFile(indexHtml, 'utf-8', (err, contents) => {
 
@@ -22,7 +24,9 @@ fs.readFile(indexHtml, 'utf-8', (err, contents) => {
   // Write back to file
   fs.writeFile(indexHtml, updated, 'utf-8', err2 => {
     if (err2) {
-      console.log(err2)
+      console.log(err2);
+      return
     }
+    console.info('Replace complete. English localization fixed');
   })
 })

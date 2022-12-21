@@ -11,11 +11,11 @@
     "i18n": "ng extract-i18n --output-path src/locale",
     "build-image": "docker build -t personal-site:latest ./",
     "start-docker": "docker run -d -p 4200:80 --name dev-site personal-site:latest",
-    "build-image:ssr": "docker build -t personal-site:ssr -f dockerfile.ssr ./",
-    "start-docker:ssr": "docker run -d -p 4200:4200 --name dev-site personal-site:ssr",
     "dev:ssr": "ng run nahu-dev-personal-site:serve-ssr",
     "serve:ssr": "node ./dist/server/proxy-server.js",
     "build:ssr": "ng build --localize && ng run nahu-dev-personal-site:server && copyfiles -V proxy-server.js dist/server && npm run fix-en-base-href",
+    "build-image:ssr": "docker build -t personal-site:ssr -f dockerfile.ssr ./",
+    "start-docker:ssr": "docker run -d -p 4200:4200 --name dev-site personal-site:ssr",
     "prerender": "ng run nahu-dev-personal-site:prerender",
     "fix-en-base-href": "node ./replace-bad-href-en.js"
   },
