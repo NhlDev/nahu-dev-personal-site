@@ -42,4 +42,7 @@ testem.log
 Thumbs.db
 
 # secrets
-secrets-keys.const.ts
+secrets-**.const.ts
+
+# firebase
+firebase.json

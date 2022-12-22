@@ -62,8 +62,10 @@
               ],
               "outputHashing": "all",
               "i18nMissingTranslation": "error",
+              
               "sourceMap": false,
               "optimization": true,
+              
               "localize": true
             },
             "development": {

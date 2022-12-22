@@ -17,7 +17,7 @@ export class CurriculumComponent implements OnInit {
 
   public ngOnInit(): void {
     if (this.platformCheckerSrv.isBrowser) {
-      this.http.get<experiece[]>(`assets/experience.${this.locale}.json`).subscribe(data => this.experiences = data);
+      this.http.get<experiece[]>(`assets/experience${'.' + this.locale}.json`).subscribe(data => this.experiences = data);
     }
   }
 }

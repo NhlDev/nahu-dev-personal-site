@@ -17,7 +17,7 @@ export class SkillsComponent implements OnInit {
 
   public ngOnInit(): void {
     if (this.platformCheckerSrv.isBrowser) {
-      this.http.get<skill[]>(`assets/skills.${this.locale}.json`).subscribe((data) => this.skills = data);
+      this.http.get<skill[]>(`assets/skills${'.' + this.locale}.json`).subscribe((data) => this.skills = data);
     }
   }
 }

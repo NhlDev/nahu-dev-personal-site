@@ -1,13 +1,15 @@
 import 'zone.js/node';
 
 import { APP_BASE_HREF } from '@angular/common';
+import { LOCALE_ID } from '@angular/core';
 import { ngExpressEngine } from '@nguniversal/express-engine';
+
 import * as express from 'express';
 import { existsSync } from 'fs';
 import { join } from 'path';
 
 import { AppServerModule } from './src/main.server';
-import { PostHandler } from 'server/post-handler';
+import { PostHandler } from './server/post-handler';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(lang: string = ''): express.Express {
@@ -33,11 +35,11 @@ export function app(lang: string = ''): express.Express {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
-    res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+    res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }, { provide: LOCALE_ID, useValue: lang ?? 'es' }] });
   });
 
-    // Express Rest API endpoints  
-    server.post('/api/**', PostHandler);
+  // Express Rest API endpoints  
+  server.post('/api/**', PostHandler);
 
   return server;
 }
