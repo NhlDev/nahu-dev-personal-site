@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent, ThemeModeSelectorComponent, FooterComponent } from './components';
+import { HeaderComponent, ThemeModeSelectorComponent, FooterComponent, NotFoundComponent } from './components';
 
 @NgModule({
   declarations: [
@@ -12,6 +12,7 @@ import { HeaderComponent, ThemeModeSelectorComponent, FooterComponent } from './
     HeaderComponent,
     ThemeModeSelectorComponent,
     FooterComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

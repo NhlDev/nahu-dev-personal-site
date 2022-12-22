@@ -3,3 +3,4 @@ export { ThemeModeSelectorComponent } from './theme-mode-selector/theme-mode-sel
 export { FooterComponent } from './footer/footer.component';
 export { SeparatorComponent } from './separator/separator.component';
 export { SkillsComponent } from './skills/skills.component';
+export { NotFoundComponent } from './not-found-404/not-found.component';

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { NotFoundComponent } from './components';
+
 const routes: Routes = [
   {
     path: '',
@@ -18,13 +20,14 @@ const routes: Routes = [
   {
     path: 'contact-me',
     loadChildren: () => import('./sections/contact-me/contact-me.module').then(x => x.ContactMeModule)
-  }
+  },
+  { path: '**', pathMatch: 'full', component: NotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabledBlocking'
-})],
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
