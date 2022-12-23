@@ -9,7 +9,7 @@
         </div>
 
         <!-- Mobile menu -->
-        <div>
+        <nav>
             <button [ngClass]="{'bg-slate-500 text-white dark:bg-slate-200 dark:text-black': expandMenu}"
                 class="md:hidden p-2" (click)="toggleMenu()">
                 <svg class="transition-all duration-200 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -19,36 +19,32 @@
                 </svg>
             </button>
 
-            <ul [ngClass]="{'hidden': !expandMenu, 'flex flex-col': expandMenu}"
-                class="dropdown-content absolute md:hidden bg-slate-300 dark:bg-slate-500 pt-1 z-10 -translate-x-full w-60"
-                (click)="toggleMenu()">
-                <li>
-                    <a class="py-2 px-4 block transition-colors duration-200" routerLink="/" i18n>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a class="py-2 px-4 block transition-colors duration-200" routerLink="../curriculum" i18n>
-                        Mi Curriculum
-                    </a>
-                </li>
-                <li>
-                    <a class="py-2 px-4 block transition-colors duration-200" routerLink="../contact-me" i18n>
-                        Contáctame
-                    </a>
-                </li>
-                <li>
-                    <a class="py-2 px-4 block transition-colors duration-200" (click)="changeLocale()" i18n>
-                        English
-                    </a>
-                </li>
-            </ul>
+            <aside (click)="toggleMenu()" [ngClass]="{'translate-x-full': !expandMenu, 'translate-x-0': expandMenu}"
+                class="flex w-2/4 flex-col space-y-2 fixed md:hidden bg-slate-300 dark:bg-slate-500 pt-1 z-10 transition-transform  top-0 right-0 h-screen">
+                <a class="py-2 px-4 block transition-colors duration-200 border-b-2 border-gray-200" routerLink="/"
+                    i18n>
+                    Home
+                </a>
 
-        </div>
+                <a class="py-2 px-4 block transition-colors duration-200 border-b-2 border-gray-200"
+                    routerLink="../curriculum" i18n>
+                    Mi Curriculum
+                </a>
 
+                <a class="py-2 px-4 block transition-colors duration-200 border-b-2 border-gray-200"
+                    routerLink="../contact-me" i18n>
+                    Contáctame
+                </a>
+
+                <a class="py-2 px-4 block transition-colors duration-200 border-b-2 border-gray-200"
+                    (click)="changeLocale()" i18n>
+                    English
+                </a>
+            </aside>
+        </nav>
 
         <!-- Web Menu -->
-        <div>
+        <nav>
             <ul class="hidden md:flex md:flex-row md:justify-evenly gap-2">
                 <li>
                     <a [ngClass]="{'bg-slate-400': currentUrl == '/home'}"
@@ -74,7 +70,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
 
     </div>
 
