@@ -24,7 +24,9 @@ export class HeaderComponent implements OnInit {
 
   public currentUrl!: string
 
-  public toggleMenu(): void { this.expandMenu = !this.expandMenu; }
+  public toggleMenu(ev: any): void {
+    this.expandMenu = !this.expandMenu;    
+  }
 
   public changeLocale(): void {
     const localeToChange = this.locale == 'es' ? 'en' : 'es';
