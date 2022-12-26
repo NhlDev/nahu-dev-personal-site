@@ -35,21 +35,21 @@
         <div class="pb-2 pt-4">
             <input
                 [ngClass]="{'has-error placeholder:text-red-500': contactForm.get('name')?.invalid && contactForm.get('name')?.dirty}"
-                type="text" placeholder="Nombre" formControlName="name" maxlength="80"
+                type="text" placeholder="Nombre" formControlName="name" maxlength="80" i18n-placeholder
                 class="block w-full p-4 text-lg rounded-sm bg-slate-200 placeholder:text-gray-500 dark:bg-slate-800 dark:placeholder:text-gray-400 transition-all duration-200">
         </div>
 
         <div class="pb-2 pt-4">
             <input
                 [ngClass]="{'has-error placeholder:text-red-500': contactForm.get('email')?.invalid && contactForm.get('email')?.dirty}"
-                type="email" placeholder="E-Mail" formControlName="email"
+                type="email" placeholder="E-Mail" formControlName="email" i18n-placeholder
                 class="block w-full p-4 text-lg rounded-sm bg-slate-200 placeholder:text-gray-500 dark:bg-slate-800 dark:placeholder:text-gray-400 transition-all duration-200">
         </div>
 
         <div class="pb-2 pt-4">
             <textarea
                 [ngClass]="{'has-error placeholder:text-red-500': contactForm.get('messageBody')?.invalid && contactForm.get('messageBody')?.dirty}"
-                class="block w-full p-4 text-lg rounded-sm bg-slate-200 placeholder:text-gray-500 dark:bg-slate-800 dark:placeholder:text-gray-400 transition-colors duration-200 h-32"
+                class="block w-full p-4 text-lg rounded-sm bg-slate-200 placeholder:text-gray-500 dark:bg-slate-800 dark:placeholder:text-gray-400 transition-colors duration-200 h-32" i18n-placeholder
                 formControlName="messageBody" placeholder="Déjame tu mensaje!">
             </textarea>
 

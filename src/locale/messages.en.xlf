@@ -96,6 +96,27 @@
           <context context-type="linenumber">29,31</context>
         </context-group>
       </trans-unit>
+            <trans-unit id="5357661269973482487" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8115083664628466958" datatype="html">
+        <source>E-Mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2258917426825297316" datatype="html">
+        <source>Leave your message!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sections/contact-me/pages/contact-me/contact-me.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4097117933882429207" datatype="html">
         <source> Send </source>
         <context-group purpose="location">
