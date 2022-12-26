@@ -30,7 +30,16 @@ function run() {
     server.use("/es", appEs);
     server.use("/en", appEn);
 
-    server.use("", appEs);
+
+
+    server.use("", (req, res) => {
+        console.log(req.get('Accept-Language'));
+        let isEsp = req.acceptsLanguages('es');
+        console.log({ isEsp });
+
+        res.redirect(isEsp ? '/es' : '/en');
+        res.end();
+    });
 
     server.listen(port, () => { console.log(`Node Express server listening on http://localhost:${port} (from proxy)`); });
 }
