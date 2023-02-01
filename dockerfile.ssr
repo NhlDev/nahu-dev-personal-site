@@ -2,14 +2,13 @@
 # Get NodeJs
 FROM node:lts-alpine
 
-# WORKDIR /usr/local/app
+WORKDIR /usr/local/app
 
 COPY ./dist ./dist
-COPY ./node_modules ./node_modules
-# COPY ./angular.json .
-# COPY ./package.json .
-# COPY ./package-lock.json .
 
 CMD [ "node", "dist/server/proxy-server.js"]
+
+RUN npm install express
+RUN npm install firebase
 
 EXPOSE 4200
