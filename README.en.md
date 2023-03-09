@@ -7,16 +7,22 @@ It uses angular universal for SSR (Server Side Rendering), and reuses the expres
 ## [Visit my website](https://nahuel.app/en)
 
 #### Warning: 
-The file with secret API keys are not included in this repo. if you want to run this app you must create a file named  **`secrets-keys.const.ts`** in the app's root path.
+The files with secret API keys are not included in this repo. if you want to run this app you must create a file named  **`secrets-keys.const.ts`** and **`secrets-firebase-config.const.ts`** in the app's root path.
 
-The object of the file must be defined like this:
+The file must define these constants:
 
+**`secrets-keys.const.ts`**
 ```
-export const  PRIVATE_KEYS = {
-    MAIL_USER: 'youmail@gmail.com',
-    MAIL_APP_KEY: 'yourAppPassword',
-    RECAPTCHA_SERVER_SECRET: 'yourRecaptchaSecret',
-    RECAPTCHA_SITE_KEY: 'yourRecaptchaSiteKey'
+export const RECAPTCHA_SITE_KEY = 'yourRecaptchaSiteKey';
+export const MAIL_USER = 'youmail@gmail.com';
+export const MAIL_APP_KEY = 'yourAppPassword';
+export const RECAPTCHA_SERVER_SECRET = 'yourRecaptchaSecret';
+```
+
+**`secrets-keys.const.ts`**
+```
+export const FIREBASE_CONFIG = {
+   YOUR_FIREBASE_CONFIG
 }
 ```
 

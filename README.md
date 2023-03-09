@@ -7,16 +7,22 @@ Esta app usa Renderizado Lado servidor (SSR por sus siglas en ingles), y reutili
 ## [Visita mi sitio](https://nahuel.app/es)
 
 #### Atención:
-El archivo con las claves secretas de APIs no está incluido en el repo. Si quieres correr la aplicación, deberás crear un archivo llamado **`secrets-keys.const.ts`** en la raíz de la aplicación.
+Los archivos con las claves secretas de APIs no están incluidos en el repo. Si quieres correr la aplicación, deberás crear un archivo llamado **`secrets-keys.const.ts`** y **`secrets-firebase-config.const.ts`** en la raíz de la aplicación.
 
 El objeto dentro del archivo debe ser definido de la siguiente manera:
 
+**`secrets-keys.const.ts`**
 ```
-export const  PRIVATE_KEYS = {
-    MAIL_USER: 'youmail@gmail.com',
-    MAIL_APP_KEY: 'yourAppPassword',
-    RECAPTCHA_SERVER_SECRET: 'yourRecaptchaSecret',
-    RECAPTCHA_SITE_KEY: 'yourRecaptchaSiteKey'
+export const RECAPTCHA_SITE_KEY = 'yourRecaptchaSiteKey';
+export const MAIL_USER = 'youmail@gmail.com';
+export const MAIL_APP_KEY = 'yourAppPassword';
+export const RECAPTCHA_SERVER_SECRET = 'yourRecaptchaSecret';
+```
+
+**`secrets-keys.const.ts`**
+```
+export const FIREBASE_CONFIG = {
+   YOUR_FIREBASE_CONFIG
 }
 ```
 
