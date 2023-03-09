@@ -1,12 +1,12 @@
-import { PRIVATE_KEYS } from "secrets-keys.const";
+import { MAIL_USER, MAIL_APP_KEY } from "secrets-keys.const";
 
 const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: PRIVATE_KEYS.MAIL_USER,
-        pass: PRIVATE_KEYS.MAIL_APP_KEY,
+        user: MAIL_USER,
+        pass: MAIL_APP_KEY,
     },
 });
 

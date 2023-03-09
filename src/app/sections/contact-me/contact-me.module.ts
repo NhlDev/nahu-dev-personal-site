@@ -8,7 +8,7 @@ import { ContactMeRoutingModule } from './contact-me-routing.module';
 import { SeparatorModule } from '../../components/separator/separator.module';
 import { MessageSenderService } from '../../services/message-sender.service';
 
-import { PRIVATE_KEYS } from 'secrets-keys.const';
+import { RECAPTCHA_SITE_KEY } from 'secrets-keys.const';
 
 @NgModule({
     declarations: [
@@ -24,7 +24,7 @@ import { PRIVATE_KEYS } from 'secrets-keys.const';
     ],
     providers: [{
         provide: RECAPTCHA_V3_SITE_KEY,
-        useValue: PRIVATE_KEYS.RECAPTCHA_SITE_KEY,
+        useValue: RECAPTCHA_SITE_KEY,
     }, MessageSenderService],
 })
 export class ContactMeModule { }

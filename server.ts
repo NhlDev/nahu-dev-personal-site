@@ -5,6 +5,8 @@ import { LOCALE_ID } from '@angular/core';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 
 import * as express from 'express';
+import * as compression from 'compression';
+
 import { existsSync } from 'fs';
 import { join } from 'path';
 
@@ -14,6 +16,10 @@ import { PostHandler } from './server/post-handler';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(lang: string = ''): express.Express {
   const server = express();
+
+  
+  server.use(compression());
+
   const distFolder = join(process.cwd(), 'dist/browser', lang);
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 

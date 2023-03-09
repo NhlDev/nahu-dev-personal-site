@@ -1,6 +1,7 @@
 import * as express from 'express';
 import * as path from 'path';
 import { initializeApp } from 'firebase/app';
+
 import { FIREBASE_CONFIG } from './secrets-firebase-config.const';
 
 function firebaseInit() { return initializeApp(FIREBASE_CONFIG); }
@@ -16,10 +17,6 @@ const getTranslatedServer = (lang: string = '') => {
 };
 
 function run() {
-
-    //init Firebase
-    console.log(firebaseInit());
-
     const port = process.env['PORT'] || 4200;
 
     // Start up the Node server
@@ -29,8 +26,6 @@ function run() {
     const server = express();
     server.use("/es", appEs);
     server.use("/en", appEn);
-
-
 
     server.use("", (req, res) => {
         console.log(req.get('Accept-Language'));

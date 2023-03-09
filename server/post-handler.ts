@@ -1,8 +1,8 @@
-import { PRIVATE_KEYS } from "secrets-keys.const";
+import { RECAPTCHA_SERVER_SECRET, MAIL_USER } from "secrets-keys.const";
 import { sendMail } from "./mail-sender";
 
 function testVerification(recaptchaToken: string, remoteIp?: string): Promise<string> {
-  const secretKey = PRIVATE_KEYS.RECAPTCHA_SERVER_SECRET;
+  const secretKey = RECAPTCHA_SERVER_SECRET;
   const verificationURL = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${recaptchaToken}` + (remoteIp ? `&remoteip=${remoteIp}` : '');
 
   return fetch(verificationURL, { method: 'POST' })
@@ -28,7 +28,7 @@ export const PostHandler = (req: any, res: any) => {
       return testVerification(req.body['g-recaptcha-response'], req.ip)
         .then((isHuman) => {
           if (isHuman) {
-            return sendMail(req.body['name'], req.body['email'], PRIVATE_KEYS.MAIL_USER, req.body['messageBody'])
+            return sendMail(req.body['name'], req.body['email'], MAIL_USER, req.body['messageBody'])
               .then((info) => { return res.status(200).send({ success: true, message: "OK" }); })
               .catch((error) => { console.error("mail error", error); return res.status(404).send({ success: false, message: "mail error" }); });
           }
