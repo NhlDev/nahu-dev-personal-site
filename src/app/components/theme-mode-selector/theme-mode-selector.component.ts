@@ -46,6 +46,6 @@ export class ThemeModeSelectorComponent implements OnInit {
       this.currentTheme = 'light';
     }
 
-    this.storage.setItem("theme", (theme as any))
+    this.storage.setItem("theme", (theme as any));
   }
 }
