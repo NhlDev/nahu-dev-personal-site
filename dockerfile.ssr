@@ -6,9 +6,10 @@ WORKDIR /usr/local/app
 
 COPY ./dist ./dist
 
-CMD [ "node", "dist/server/proxy-server.js"]
-
 RUN npm install express
+RUN npm install compression
 RUN npm install firebase
+
+CMD [ "node", "dist/server/proxy-server.js"]
 
 EXPOSE 4200
