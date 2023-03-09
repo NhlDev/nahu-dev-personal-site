@@ -25,7 +25,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        opacity: .5;
+        opacity: .8;
     }
 
     .parallax-effect-content {
@@ -37,14 +37,22 @@
         width: 100%;
         transform-style: flat;
         transform: translate3d(0, -50%, 0);
-    }    
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        text-shadow: 2px 2px var(--tw-shadow-color);
+
+    }
 }
 
-:root{
+:root {
     --google-captcha-visibility: hidden;
 }
 
 // hide recaptcha badge
 .grecaptcha-badge {
     visibility: var(--google-captcha-visibility);
-  }
+}

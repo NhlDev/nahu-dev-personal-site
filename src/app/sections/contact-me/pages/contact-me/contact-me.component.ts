@@ -64,7 +64,7 @@ export class ContactMeComponent implements OnInit, AfterViewInit, OnDestroy {
         if (element) {
           element.style.visibility = 'visible';
         }
-      }, 2000);
+      }, 1000);
     }
   }
 
